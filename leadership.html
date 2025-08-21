@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leadership</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="ootm.png" alt="OOTM" width="425" height="100" class="logo">
+      <div class="menu-toggle" id="mobile-menu">
+        &#9776;
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-is-odyssey.html">What is Odyssey</a></li>
+        <li><a href="how-to-register.html">How to Register</a></li>
+        <li><a href="why-join.html">Why Join</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main class="hero">
+    <h1>Meet Our Team</h1>
+    <div class="leadership-grid">
+      <div class="leader-card president">
+        <img src="https://via.placeholder.com/200" alt="President">
+        <h2>President</h2>
+        <p>Name Here</p>
+      </div>
+      <div class="leader-card vice-president">
+        <img src="https://via.placeholder.com/200" alt="Vice President">
+        <h2>Vice President</h2>
+        <p>Name Here</p>
+      </div>
+      <div class="leader-card secretary">
+        <img src="https://via.placeholder.com/200" alt="Secretary">
+        <h2>Secretary</h2>
+        <p>Name Here</p>
+      </div>
+      <div class="leader-card webmaster">
+        <img src="https://via.placeholder.com/200" alt="Webmaster">
+        <h2>Webmaster</h2>
+        <p>Name Here</p>
+      </div>
+      <div class="leader-card treasurer">
+        <img src="https://via.placeholder.com/200" alt="Treasurer">
+        <h2>Treasurer</h2>
+        <p>Name Here</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025-2026 DVHS Odyssey of the Mind Club</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+  
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>

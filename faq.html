@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="ootm.png" alt="OOTM" width="425" height="100" class="logo">
+      <div class="menu-toggle" id="mobile-menu">
+        &#9776;
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-is-odyssey.html">What is Odyssey</a></li>
+        <li><a href="how-to-register.html">How to Register</a></li>
+        <li><a href="why-join.html">Why Join</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main class="hero">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">Are there any "requirements" for students planning to compete in DV Odyssey of The Mind?</button>
+        <div class="faq-answer">
+          <p>Students should be competent with speaking in front of a crowd and working in groups, but there are no formal requirements that we seek.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">When is the deadline to apply?</button>
+        <div class="faq-answer">
+          <p>Students should register by the end of October.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Is Odyssey a fitting activity to add to extracurriculars (ECs)?</button>
+        <div class="faq-answer">
+          <p>Yes! Odyssey provides multiple award opportunities and leadership opportunities.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do I need prior STEM or theater experience?</button>
+        <div class="faq-answer">
+          <p>No! Odyssey is designed for all types of students. Creativity, teamwork, and problem-solving are what matter most.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025-2026 DVHS Odyssey of the Mind Club</p>
+  </footer>
+
+  <script>
+    // FAQ Accordion Script
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach((q) => {
+      q.addEventListener("click", () => {
+        const answer = q.nextElementSibling;
+        q.classList.toggle("active");
+
+        if (answer.style.maxHeight) {
+          answer.style.maxHeight = null;
+        } else {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+
+<script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
+

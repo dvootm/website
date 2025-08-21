@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odyssey of the Mind</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="ootm.png" alt="OOTM" width="425" height="100" class="logo">
+      <div class="menu-toggle" id="mobile-menu">
+        &#9776;
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-is-odyssey.html">What is Odyssey</a></li>
+        <li><a href="how-to-register.html">How to Register</a></li>
+        <li><a href="why-join.html">Why Join</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main class="hero">
+    <h1>The premiere competition for creative and STEM-oriented minds</h1>
+    <div class="hero-buttons">
+      <a href="what-is-odyssey.html" class="btn">Learn More</a>
+      <a href="how-to-register.html" class="btn secondary">Register Now</a>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025-2026 DVHS Odyssey of the Mind Club</p>
+  </footer>
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+  
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>

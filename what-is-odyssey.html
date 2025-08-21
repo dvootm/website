@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is Odyssey?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="ootm.png" alt="OOTM" width="425" height="100" class="logo">
+      <div class="menu-toggle" id="mobile-menu">
+        &#9776;
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-is-odyssey.html">What is Odyssey</a></li>
+        <li><a href="how-to-register.html">How to Register</a></li>
+        <li><a href="why-join.html">Why Join</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main class="hero">
+    <h1>What is Odyssey of the Mind?</h1>
+    <p class="intro-text">
+      Odyssey of the Mind is an international creative problem-solving competition 
+      that challenges students to think outside the box, work as a team, and present 
+      innovative solutions in fun and engaging ways.
+    </p>
+
+    <div class="odyssey-grid">
+      <div class="odyssey-card">
+        <h2>Creativity</h2>
+        <p>Teams solve open-ended problems that require out-of-the-box thinking. 
+        From building contraptions to performing skits, Odyssey encourages imagination without limits.</p>
+      </div>
+
+      <div class="odyssey-card">
+        <h2>Competition</h2>
+        <p>Teams present their solutions at regional, state, and even international competitions. 
+        Each solution is unique, showcasing the diversity of approaches to the same challenge.</p>
+      </div>
+
+      <div class="odyssey-card">
+        <h2>Teamwork</h2>
+        <p>Students collaborate, share ideas, and bring their talents together. 
+        No single person can do it all — success comes from the group’s synergy.</p>
+      </div>
+
+      <div class="odyssey-card">
+        <h2>Global Community</h2>
+        <p>Odyssey isn’t just local — students connect with peers worldwide who are passionate 
+        about problem-solving, innovation, and creativity.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025-2026 DVHS Odyssey of the Mind Club</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+  
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>
+
